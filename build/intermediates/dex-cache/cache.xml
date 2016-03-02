@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-c54487ca0ac31c7162e7fb9e52dea93ec7745e80.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-dd65a369692d29395f0c732d4cffca85eb4d057c.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-68e4eb291fd9ac0b12d36047a2445648481de025.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-f866cc05554128bdbde059840284096c906edf4d.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-cffb60d86be66bb7783cf118322cba1acbaf162d.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-4314014ff76079e3293644cd31712208117c860c.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-178037dfcbcf3a5fd01ec5346ae3d44349f20de0.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-acf15986f5811ee4cff7c806e69a977b8919cd48.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-eb9a0660e103c515f4133019d825edddb988c717.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-e63245355d5fea812915028dc408d42d47abf74f.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-3ce181f01ebde192668aa7e014f6d21395764e75.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-4a0be3938d99623921b922f4233daf7b121d845b.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-1fe4b7b7d8b1a9dc2579603a504e4e65243fd5e3.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-ad5cf961255ef118bb5f7c7f05116178c7766a9e.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-8ac1288c4420a339d59f81923a399113042d4318.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-ab94b2e46407495755fa477ad12c8b518894bb00.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-63dc82083f68e7e469876506cc44244297067060.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-d7469d9f46f6f6d4d868a5b04e1dd4f3393c345e.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-c2fc66fe9953d244e46231736981748914e0ed5e.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-b96e8933bc22d7ff7756d9bc6583901281016c1d.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-e83d48c0f09578ed07f82b83115aff22bdfd7ad4.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-7f94198f9aabb5ce675b9793def54e94bb858140.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-413f592ace69d22e6f59cfd02496a5892ffb71f2.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-311331bfffa0cfd59f6b6e8327994076357cda50.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-872465e3904bdeae951df4c57138566eaecb0953.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-6b364be5ea18b83d7827b869dbec2c5883140346.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-fb03992e372af7b10ffe1633e6ea980a3c106ef1.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-490c782509a328d8b7abceb1fbc84073b62a2239.jar" />
+    </item>
+    <item
+        jar="/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="/Users/TK/Downloads/Represent/mobile/build/intermediates/pre-dexed/debug/classes-8024cb95915f1508981645801dd41360189252fe.jar" />
+    </item>
+
+</items>
