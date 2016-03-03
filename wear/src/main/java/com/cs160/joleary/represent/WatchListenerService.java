@@ -1,6 +1,7 @@
 package com.cs160.joleary.represent;
 
 import android.content.Intent;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import com.google.android.gms.wearable.MessageEvent;
@@ -19,9 +20,11 @@ public class WatchListenerService extends WearableListenerService {
 
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
-        Log.d("T", "in WatchListenerService, got: " + messageEvent.getPath());
+        Log.d("MESSAGERECEIVED###", "in WatchListenerService, got: " + messageEvent.getPath());
         //use the 'path' field in sendmessage to differentiate use cases
         //(here, fred vs lexy)
+
+        LocalBroadcastManager broadcaster = LocalBroadcastManager.getInstance(this);
 
         if( messageEvent.getPath().equalsIgnoreCase( REP ) ) {
             String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
@@ -29,19 +32,11 @@ public class WatchListenerService extends WearableListenerService {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //you need to add this flag since you're starting a new activity from a service
             parseRepData(value, intent);
-            Log.d("T", "about to start watch ProfileActivity with new Representatives");
+            Log.d("MESSAGE#####", "about to start watch ProfileActivity with new Representatives");
             startActivity(intent);
-
-        } else if (messageEvent.getPath().equalsIgnoreCase( SWITCH )) {
-            String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
-            Intent intent = new Intent(this, MainActivity.class );
-            intent.addFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
-            //you need to add this flag since you're starting a new activity from a service
-            intent.putExtra("CAT_NAME", "Lexy");
-            Log.d("T", "about to start watch MainActivity with CAT_NAME: Lexy");
-            startActivity(intent);
+            broadcaster.sendBroadcast(intent);
         } else {
-            super.onMessageReceived( messageEvent );
+            super.onMessageReceived(messageEvent);
         }
 
     }
@@ -51,10 +46,12 @@ public class WatchListenerService extends WearableListenerService {
 
         intent.putExtra("NAME1", tokens[0]);
         intent.putExtra("PARTY1", tokens[1]);
-        intent.putExtra("NAME2", tokens[0]);
-        intent.putExtra("PARTY2", tokens[1]);
-        intent.putExtra("NAME3", tokens[0]);
-        intent.putExtra("PARTY3", tokens[1]);
+        intent.putExtra("NAME2", tokens[2]);
+        intent.putExtra("PARTY2", tokens[3]);
+        intent.putExtra("NAME3", tokens[4]);
+        intent.putExtra("PARTY3", tokens[5]);
+        Log.d("MESSAGE#####", tokens[0] + tokens[1] + tokens[2]);
+
     }
 
 }

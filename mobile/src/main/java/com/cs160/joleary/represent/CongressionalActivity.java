@@ -18,6 +18,7 @@ public class CongressionalActivity extends Activity {
         setContentView(R.layout.activity_congressional);
         Intent intent = getIntent();
         int zip = intent.getIntExtra(StartActivity.ZIP_CODE, 94704);
+        search();
 
         Button button1 = (Button) findViewById(R.id.button);
         Button button2 = (Button) findViewById(R.id.button2);
@@ -56,13 +57,13 @@ public class CongressionalActivity extends Activity {
         sendIntent.putExtra("IS_NEW_REPDATA", true);
 
         sendIntent.putExtra("NAME1", "Doge");
-        sendIntent.putExtra("PARTY1", "Dem");
+        sendIntent.putExtra("PARTY1", "dem");
 
         sendIntent.putExtra("NAME2", "Nyan Cat");
-        sendIntent.putExtra("PARTY2", "Rep");
+        sendIntent.putExtra("PARTY2", "rep");
 
         sendIntent.putExtra("NAME3", "Trump");
-        sendIntent.putExtra("PARTY3", "Ind");
+        sendIntent.putExtra("PARTY3", "ind");
 
         startService(sendIntent);
     }

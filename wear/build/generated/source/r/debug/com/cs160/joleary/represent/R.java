@@ -561,14 +561,16 @@ containing a value of this type.
         public static final int common_signin_btn_text_normal_light=0x7f02001b;
         public static final int common_signin_btn_text_pressed_dark=0x7f02001c;
         public static final int common_signin_btn_text_pressed_light=0x7f02001d;
-        public static final int dogeprofilepic=0x7f02001e;
-        public static final int food_bg_160=0x7f02001f;
-        public static final int generic_confirmation=0x7f020020;
-        public static final int generic_confirmation_animation=0x7f020021;
-        public static final int ic_full_cancel=0x7f020022;
-        public static final int ic_full_sad=0x7f020023;
-        public static final int open_on_phone=0x7f020024;
-        public static final int open_on_phone_animation=0x7f020025;
+        public static final int dem_logo=0x7f02001e;
+        public static final int dogeprofilepic=0x7f02001f;
+        public static final int food_bg_160=0x7f020020;
+        public static final int generic_confirmation=0x7f020021;
+        public static final int generic_confirmation_animation=0x7f020022;
+        public static final int ic_full_cancel=0x7f020023;
+        public static final int ic_full_sad=0x7f020024;
+        public static final int open_on_phone=0x7f020025;
+        public static final int open_on_phone_animation=0x7f020026;
+        public static final int rep_logo=0x7f020027;
     }
     public static final class id {
         public static final int adjust_height=0x7f0e0007;
@@ -590,18 +592,19 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0e0010;
         public static final int fill_vertical=0x7f0e0011;
         public static final int fit=0x7f0e0006;
+        public static final int fragLayout=0x7f0e001d;
         public static final int gridViewPager=0x7f0e0013;
         public static final int left=0x7f0e0002;
         public static final int message=0x7f0e001c;
-        public static final int name=0x7f0e001d;
+        public static final int name=0x7f0e001e;
         public static final int none=0x7f0e0009;
         public static final int pager=0x7f0e0015;
         public static final int parentPanel=0x7f0e0016;
         public static final int right=0x7f0e0003;
         public static final int start=0x7f0e0012;
-        public static final int text=0x7f0e001e;
+        public static final int text=0x7f0e001f;
         public static final int time=0x7f0e0014;
-        public static final int title=0x7f0e001f;
+        public static final int title=0x7f0e0020;
         public static final int top=0x7f0e0004;
     }
     public static final class integer {
