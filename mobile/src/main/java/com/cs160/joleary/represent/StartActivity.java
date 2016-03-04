@@ -57,6 +57,7 @@ public class StartActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent sendIntent = new Intent(getBaseContext(), CongressionalActivity.class);
+                sendIntent.putExtra(ZIP_CODE, 94704);
                 startActivity(sendIntent);
             }
         });

@@ -15,4 +15,16 @@
     <string name="dogeprofilepic">profile_pic</string>
     <string name="billslist">all\nkinds\nof\nshit</string>
 
+    <string name="name1">Doge</string>
+    <string name="name2">Doge</string>
+    <string name="name3">Doge</string>
+    <string name="email1">Doge</string>
+    <string name="email2">Doge</string>
+    <string name="email3">Doge</string>
+    <string name="site1">Doge</string>
+    <string name="site2">Doge</string>
+    <string name="site3">Doge</string>
+
+
+
 </resources>

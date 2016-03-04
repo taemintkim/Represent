@@ -604,8 +604,10 @@ containing a value of this type.
         public static final int start=0x7f0e0012;
         public static final int text=0x7f0e001f;
         public static final int time=0x7f0e0014;
-        public static final int title=0x7f0e0020;
+        public static final int title=0x7f0e0022;
         public static final int top=0x7f0e0004;
+        public static final int vote_data=0x7f0e0021;
+        public static final int vote_view_titles=0x7f0e0020;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f0d0000;
@@ -627,9 +629,12 @@ containing a value of this type.
         public static final int fragment=0x7f040005;
         public static final int rect_activity_main=0x7f040006;
         public static final int rect_activity_profile=0x7f040007;
-        public static final int round_activity_main=0x7f040008;
-        public static final int round_activity_profile=0x7f040009;
-        public static final int watch_card_content=0x7f04000a;
+        public static final int rect_activity_vote=0x7f040008;
+        public static final int round_activity_main=0x7f040009;
+        public static final int round_activity_profile=0x7f04000a;
+        public static final int round_activity_vote=0x7f04000b;
+        public static final int votefragment=0x7f04000c;
+        public static final int watch_card_content=0x7f04000d;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -675,6 +680,7 @@ containing a value of this type.
         public static final int hello_square=0x7f080025;
         public static final int name=0x7f080026;
         public static final int title_activity_profile=0x7f080027;
+        public static final int title_activity_vote=0x7f080028;
     }
     public static final class style {
         public static final int CardText=0x7f090000;

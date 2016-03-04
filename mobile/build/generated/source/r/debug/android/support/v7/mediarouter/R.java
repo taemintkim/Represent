@@ -486,7 +486,7 @@ public final class R {
 		public static final int mr_ic_play_light = 0x7f020094;
 		public static final int mr_ic_settings_dark = 0x7f020095;
 		public static final int mr_ic_settings_light = 0x7f020096;
-		public static final int notification_template_icon_bg = 0x7f02009c;
+		public static final int notification_template_icon_bg = 0x7f02009f;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0e00ae;

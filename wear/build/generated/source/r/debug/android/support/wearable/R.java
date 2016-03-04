@@ -150,7 +150,7 @@ public final class R {
 		public static final int right = 0x7f0e0003;
 		public static final int start = 0x7f0e0012;
 		public static final int text = 0x7f0e001f;
-		public static final int title = 0x7f0e0020;
+		public static final int title = 0x7f0e0022;
 		public static final int top = 0x7f0e0004;
 	}
 	public static final class interpolator {
@@ -165,7 +165,7 @@ public final class R {
 		public static final int alert_dialog_wearable = 0x7f040002;
 		public static final int dismiss_overlay = 0x7f040003;
 		public static final int error_layout = 0x7f040004;
-		public static final int watch_card_content = 0x7f04000a;
+		public static final int watch_card_content = 0x7f04000d;
 	}
 	public static final class string {
 		public static final int dismiss_overlay_button_label = 0x7f08001e;

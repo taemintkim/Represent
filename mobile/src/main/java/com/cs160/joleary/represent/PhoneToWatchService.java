@@ -46,7 +46,10 @@ public class PhoneToWatchService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         // Which cat do we want to feed? Grab this info from INTENT
         // which was passed over when we called startService
-        Bundle extras = intent.getExtras();
+        Bundle extras = null;
+        if (intent != null) {
+            extras = intent.getExtras();
+        }
         if (extras != null && extras.getBoolean("IS_NEW_REPDATA")) {
             sendRepData(extras);
         } else {
@@ -65,7 +68,8 @@ public class PhoneToWatchService extends Service {
     void sendRepData(Bundle extras) {
         final String message = extras.getString("NAME1") + "%" + extras.getString("PARTY1") + "%"
                 + extras.getString("NAME2") + "%" + extras.getString("PARTY2") + "%"
-                + extras.getString("NAME3") + "%" + extras.getString("PARTY3");
+                + extras.getString("NAME3") + "%" + extras.getString("PARTY3") + "%"
+                + extras.getString("ZIP");
 
         new Thread(new Runnable() {
             @Override

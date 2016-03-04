@@ -20,7 +20,6 @@ public class WatchListenerService extends WearableListenerService {
 
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
-        Log.d("MESSAGERECEIVED###", "in WatchListenerService, got: " + messageEvent.getPath());
         //use the 'path' field in sendmessage to differentiate use cases
         //(here, fred vs lexy)
 
@@ -28,11 +27,11 @@ public class WatchListenerService extends WearableListenerService {
 
         if( messageEvent.getPath().equalsIgnoreCase( REP ) ) {
             String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
+            Log.d("MESSAGERECEIVED###", "in WatchListenerService, got: " + value);
             Intent intent = new Intent(this, ProfileActivity.class );
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //you need to add this flag since you're starting a new activity from a service
             parseRepData(value, intent);
-            Log.d("MESSAGE#####", "about to start watch ProfileActivity with new Representatives");
             startActivity(intent);
             broadcaster.sendBroadcast(intent);
         } else {
@@ -50,7 +49,8 @@ public class WatchListenerService extends WearableListenerService {
         intent.putExtra("PARTY2", tokens[3]);
         intent.putExtra("NAME3", tokens[4]);
         intent.putExtra("PARTY3", tokens[5]);
-        Log.d("MESSAGE#####", tokens[0] + tokens[1] + tokens[2]);
+        intent.putExtra("ZIP", tokens[6]);
+        Log.d("MESSAGE#####", tokens[0] + tokens[1] + tokens[6]);
 
     }
 

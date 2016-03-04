@@ -133,4 +133,5 @@
     <string name="hello_square">Hello Square World!</string>
     <string name="name">Doge</string>
     <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_vote">VoteActivity</string>
 </resources>

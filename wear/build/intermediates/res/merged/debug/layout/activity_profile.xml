@@ -9,6 +9,7 @@
     app:rectLayout="@layout/rect_activity_profile"
     app:roundLayout="@layout/round_activity_profile"
     tools:context="com.cs160.joleary.represent.ProfileActivity"
-    tools:deviceIds="wear"></android.support.v4.view.ViewPager>
+    tools:deviceIds="wear"
+    android:clickable="true" />
 
 <!-- From: file:/Users/TK/Downloads/Represent/wear/src/main/res/layout/activity_profile.xml -->
