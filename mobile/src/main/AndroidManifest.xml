@@ -26,10 +26,6 @@
                 <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
             </intent-filter>
         </service>
-
-        <activity
-            android:name=".MainActivity"
-            android:label="Catnip" />
         <activity
             android:name=".CongressionalActivity"
             android:label="@string/title_activity_congressional"
@@ -38,5 +34,11 @@
             android:name=".DetailedActivity"
             android:label="@string/title_activity_detailed"></activity>
     </application>
+
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
 </manifest>

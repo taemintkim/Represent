@@ -15,29 +15,31 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/zipText"
-        android:layout_marginTop="73dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
         android:textAlignment="center"
         android:singleLine="true"
-        android:hint="ZIP Code" />
+        android:hint="ZIP Code"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/locationbutton"
+        android:layout_toStartOf="@+id/zipbutton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/find"
         android:id="@+id/zipbutton"
-        android:layout_below="@+id/zipText"
-        android:layout_alignEnd="@+id/zipText"
-        android:layout_alignStart="@+id/zipText" />
+        android:layout_alignBottom="@+id/zipText"
+        android:layout_alignEnd="@+id/locationbutton" />
+        <!--android:layout_alignStart="@+id/zipText"-->
+    />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/currlocation"
         android:id="@+id/locationbutton"
-        android:layout_below="@+id/zipbutton"
-        android:layout_marginTop="119dp"
-        android:layout_alignEnd="@+id/zipbutton"
-        android:layout_alignStart="@+id/zipbutton" />
+        android:layout_below="@+id/zipText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
