@@ -219,6 +219,32 @@
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values-v21/values-v21.xml -->
+    <eat-comment/>
+    <style name="ComposerDark" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:textColor">@color/tw__composer_white</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_white</item>
+    </style>
+    <style name="ComposerLight" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:textColor">@color/tw__composer_black</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_blue</item>
+    </style>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-v21/values-v21.xml -->
+    <eat-comment/>
+    <style name="Digits_default" parent="@android:style/Theme.Material.Light">
+        <item name="dgts__accentColor">?android:attr/colorAccent</item>
+    </style>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-v21/values-v21.xml -->
+    <eat-comment/>
+    <style name="MediaTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-v21/values-v21.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -248,4 +274,10 @@
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/res/values-v21/appinvite_styles.xml -->
     <eat-comment/>
     <style name="Theme.AppInvite.Preview.Base" parent="@android:style/Theme.Material.Light.DialogWhenLarge.NoActionBar"/>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-v21/values-v21.xml -->
+    <eat-comment/>
+    <style name="tw__TweetFullName" parent="tw__TweetFullNameBase">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
 </resources>

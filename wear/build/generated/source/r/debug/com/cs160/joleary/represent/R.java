@@ -563,14 +563,16 @@ containing a value of this type.
         public static final int common_signin_btn_text_pressed_light=0x7f02001d;
         public static final int dem_logo=0x7f02001e;
         public static final int dogeprofilepic=0x7f02001f;
-        public static final int food_bg_160=0x7f020020;
-        public static final int generic_confirmation=0x7f020021;
-        public static final int generic_confirmation_animation=0x7f020022;
-        public static final int ic_full_cancel=0x7f020023;
-        public static final int ic_full_sad=0x7f020024;
-        public static final int open_on_phone=0x7f020025;
-        public static final int open_on_phone_animation=0x7f020026;
-        public static final int rep_logo=0x7f020027;
+        public static final int flag=0x7f020020;
+        public static final int food_bg_160=0x7f020021;
+        public static final int generic_confirmation=0x7f020022;
+        public static final int generic_confirmation_animation=0x7f020023;
+        public static final int ic_full_cancel=0x7f020024;
+        public static final int ic_full_sad=0x7f020025;
+        public static final int indep_logo=0x7f020026;
+        public static final int open_on_phone=0x7f020027;
+        public static final int open_on_phone_animation=0x7f020028;
+        public static final int rep_logo=0x7f020029;
     }
     public static final class id {
         public static final int adjust_height=0x7f0e0007;
@@ -583,6 +585,7 @@ containing a value of this type.
         public static final int center=0x7f0e0005;
         public static final int center_horizontal=0x7f0e000a;
         public static final int center_vertical=0x7f0e000b;
+        public static final int chart1=0x7f0e0021;
         public static final int clip_horizontal=0x7f0e000c;
         public static final int clip_vertical=0x7f0e000d;
         public static final int dismiss_overlay_button=0x7f0e001b;
@@ -604,10 +607,10 @@ containing a value of this type.
         public static final int start=0x7f0e0012;
         public static final int text=0x7f0e001f;
         public static final int time=0x7f0e0014;
-        public static final int title=0x7f0e0022;
+        public static final int title=0x7f0e0023;
         public static final int top=0x7f0e0004;
-        public static final int vote_data=0x7f0e0021;
-        public static final int vote_view_titles=0x7f0e0020;
+        public static final int votefraglayout=0x7f0e0020;
+        public static final int votetitle=0x7f0e0022;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f0d0000;
@@ -643,6 +646,7 @@ containing a value of this type.
         public static final int app_name=0x7f08001f;
         public static final int auth_google_play_services_client_facebook_display_name=0x7f080020;
         public static final int auth_google_play_services_client_google_display_name=0x7f080021;
+        public static final int com_crashlytics_android_build_id=0x7f080022;
         public static final int common_android_wear_notification_needs_update_text=0x7f080000;
         public static final int common_android_wear_update_text=0x7f080001;
         public static final int common_android_wear_update_title=0x7f080002;
@@ -673,14 +677,14 @@ containing a value of this type.
         public static final int common_google_play_services_updating_text=0x7f08001b;
         public static final int common_google_play_services_updating_title=0x7f08001c;
         public static final int common_open_on_phone=0x7f08001d;
-        public static final int common_signin_button_text=0x7f080022;
-        public static final int common_signin_button_text_long=0x7f080023;
+        public static final int common_signin_button_text=0x7f080023;
+        public static final int common_signin_button_text_long=0x7f080024;
         public static final int dismiss_overlay_button_label=0x7f08001e;
-        public static final int hello_round=0x7f080024;
-        public static final int hello_square=0x7f080025;
-        public static final int name=0x7f080026;
-        public static final int title_activity_profile=0x7f080027;
-        public static final int title_activity_vote=0x7f080028;
+        public static final int hello_round=0x7f080025;
+        public static final int hello_square=0x7f080026;
+        public static final int name=0x7f080027;
+        public static final int title_activity_profile=0x7f080028;
+        public static final int title_activity_vote=0x7f080029;
     }
     public static final class style {
         public static final int CardText=0x7f090000;

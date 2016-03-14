@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.util.Log;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.wearable.MessageApi;
@@ -69,7 +70,8 @@ public class PhoneToWatchService extends Service {
         final String message = extras.getString("NAME1") + "%" + extras.getString("PARTY1") + "%"
                 + extras.getString("NAME2") + "%" + extras.getString("PARTY2") + "%"
                 + extras.getString("NAME3") + "%" + extras.getString("PARTY3") + "%"
-                + extras.getString("ZIP");
+                + extras.getString("ZIP") + "%" + extras.getString("VOTES");
+        Log.d("string: ", message);
 
         new Thread(new Runnable() {
             @Override

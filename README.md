@@ -1,20 +1,25 @@
 # PROG 02: Represent!
 
 Briefly describe your app here.
+This app lets users look up information about their Congressmen from their locations or by zipcodes. It shows useful information like email, website, sponsored bills, committee involvements.
 
 ## Authors
-
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+Tae Min Kim ([taemintkim@berkeley.edu](mailto:taemintkim@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Represent! Demo Video] (https://youtu.be/k-YGBt-3jWA)
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/starting.png" height="400" alt="Screenshot"/>
+<img src="screenshots/congress.png" height="400" alt="Screenshot"/>
+<img src="screenshots/detailed.png" height="400" alt="Screenshot"/>
+<img src="screenshots/2012votestats.png" height="400" alt="Screenshot"/>
+
 
 ## Acknowledgments
-
+Google API
+PhilJay's MPAndroidChart API
 * Hat tip to anyone who's code was used
 * Any other support

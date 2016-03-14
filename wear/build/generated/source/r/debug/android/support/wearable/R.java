@@ -119,12 +119,12 @@ public final class R {
 		public static final int card_frame = 0x7f020001;
 		public static final int card_frame_pressed = 0x7f020002;
 		public static final int close_button = 0x7f020003;
-		public static final int generic_confirmation = 0x7f020021;
-		public static final int generic_confirmation_animation = 0x7f020022;
-		public static final int ic_full_cancel = 0x7f020023;
-		public static final int ic_full_sad = 0x7f020024;
-		public static final int open_on_phone = 0x7f020025;
-		public static final int open_on_phone_animation = 0x7f020026;
+		public static final int generic_confirmation = 0x7f020022;
+		public static final int generic_confirmation_animation = 0x7f020023;
+		public static final int ic_full_cancel = 0x7f020024;
+		public static final int ic_full_sad = 0x7f020025;
+		public static final int open_on_phone = 0x7f020027;
+		public static final int open_on_phone_animation = 0x7f020028;
 	}
 	public static final class id {
 		public static final int alertTitle = 0x7f0e0018;
@@ -150,7 +150,7 @@ public final class R {
 		public static final int right = 0x7f0e0003;
 		public static final int start = 0x7f0e0012;
 		public static final int text = 0x7f0e001f;
-		public static final int title = 0x7f0e0022;
+		public static final int title = 0x7f0e0023;
 		public static final int top = 0x7f0e0004;
 	}
 	public static final class interpolator {

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-pl/values-pl.xml -->
+    <eat-comment/>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 godz.</item>
+        <item quantity="other">%d godz.</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-pl/values-pl.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Przejdź do strony głównej"</string>
@@ -54,6 +68,45 @@
     <string msgid="311697239335516384" name="common_open_on_phone">"Otwórz na telefonie"</string>
     <string msgid="3156914698180786012" name="common_signin_button_text">"Zaloguj się"</string>
     <string msgid="1483290677806110088" name="common_signin_button_text_long">"Zaloguj się przez Google"</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-pl/values-pl.xml -->
+    <eat-comment/>
+    <string name="dgts__call_me">Zadzwoń do mnie</string>
+    <string name="dgts__calling">Nawiązywanie połączenia…</string>
+    <string name="dgts__confirmation_code">Kod potwierdzenia</string>
+    <string name="dgts__confirmation_edit_hint">Wprowadź otrzymany sześciocyfrowy kod</string>
+    <string name="dgts__confirmation_error">Nie udało nam się potwierdzić Twojego numeru telefonu</string>
+    <string name="dgts__confirmation_error_alternative">Przepraszamy, mamy problem z wysłaniem Ci kodu potwierdzającego.</string>
+    <string name="dgts__confirmation_expired">Ten kod jest już nieważny. Poproś o nowy kod potwierdzający.</string>
+    <string name="dgts__continue">Kontynuuj</string>
+    <string name="dgts__digits_logo_desc">ikona logo digits</string>
+    <string name="dgts__digits_logo_name_desc">nazwa logo digits</string>
+    <string name="dgts__dismiss">Odrzuć</string>
+    <string name="dgts__done">Gotowe</string>
+    <string name="dgts__email_request_edit_hint">Adres e-mail</string>
+    <string name="dgts__email_request_title">Wpisz adres e-mail</string>
+    <string name="dgts__find_your_friends">Znajdź znajomych</string>
+    <string name="dgts__image_header_description">Nagłówek obrazu logowania</string>
+    <string name="dgts__invalid_email">Nieprawidłowy adres e-mail. Spróbuj ponownie.</string>
+    <string name="dgts__login_digits_text">Użyj mojego numeru telefonu</string>
+    <string name="dgts__network_error">Sprawdź sieć i spróbuj ponownie.</string>
+    <string name="dgts__not_now">Nie teraz</string>
+    <string name="dgts__okay">OK</string>
+    <string name="dgts__phone_number_edit_hint">Twój numer</string>
+    <string name="dgts__phone_number_text">Wpisz swój numer telefonu</string>
+    <string name="dgts__pin_code_verification_title">Wpisz dwuetapowy kod weryfikacyjny</string>
+    <string name="dgts__resend_confirmation_button_code">Wyślij ponownie kod</string>
+    <string name="dgts__resend_confirmation_text">Wyślij ponownie kod potwierdzenia</string>
+    <string name="dgts__sending">Wysyłanie…</string>
+    <string name="dgts__success_desc">Ikona sukcesu</string>
+    <string name="dgts__try_again">Spróbuj ponownie</string>
+    <string name="dgts__try_again_confirmation">Sprawdź kod i spróbuj ponownie.</string>
+    <string name="dgts__try_again_email">Sprawdź swój adres e-mail i spróbuj ponownie.</string>
+    <string name="dgts__try_again_phone_number">Sprawdź numer i spróbuj ponownie.</string>
+    <string name="dgts__try_another_phone">Wpisz inny numer telefonu</string>
+    <string name="dgts__unsupported_operator_error">Nie można wysłać SMS-a na podany numer.</string>
+    <string name="dgts__upload_contacts">Używamy Digits by Twitter, aby znaleźć więcej Twoich znajomych, którzy korzystają z tej aplikacji. Stuknij OK, a prześlemy Twoje kontakty do Digits by Twitter, aby Ci pomóc znaleźć użytkowników aplikacji %1$s, których znasz oraz by użytkownicy %1$s mogli znaleźć Ciebie.</string>
+    <string name="dgts__verification_code">Kod weryfikacyjny</string>
+    <string name="dgts_pin_code_terms">Ustawiono poprzednio dwuetapową weryfikację kodu na digits.com</string>
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-pl/values-pl.xml -->
     <eat-comment/>
     <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Przesyłaj"</string>
@@ -74,6 +127,36 @@
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-pl/values-pl.xml -->
     <eat-comment/>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-pl/values-pl.xml -->
+    <eat-comment/>
+    <string name="tw__allow_btn_txt">Zezwól</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-pl/values-pl.xml -->
+    <eat-comment/>
+    <string name="tw__like_tweet">Polub Tweet</string>
+    <string name="tw__liked_tweet">Nie lubię</string>
+    <string name="tw__loading_tweet">Wczytywanie tweeta</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-pl/values-pl.xml -->
+    <eat-comment/>
+    <string name="tw__login_btn_txt">Zaloguj się przez Twittera</string>
+    <string name="tw__not_now_btn_txt">Nie teraz</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-pl/values-pl.xml -->
+    <eat-comment/>
+    <string name="tw__pause">zatrzymaj</string>
+    <string name="tw__play">odtwórz</string>
+    <string name="tw__relative_date_format_long">d.MM.y</string>
+    <string name="tw__relative_date_format_short">d MMM</string>
+    <string name="tw__replay">odtwórz ponownie</string>
+    <string name="tw__retweeted_by_format">Podane dalej przez %1$s</string>
+    <string name="tw__share_content_format">Zobacz tweet od \@%1$s\: https://twitter.com/%1$s/status/%2$s</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-pl/values-pl.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">Zezwól %1$s na dostęp do adresu e-mail powiązanego z Twoim kontem Twittera \@%2$s, dzięki czemu %1$s będzie mógł go używać zgodnie ze swoją Polityką Prywatności. Na przykład, %1$s będzie mógł wysyłać Ci aktualizacje i inne informacje na ten adres.</string>
+    <string name="tw__share_email_title">Udostępnij swój adres e-mail</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-pl/values-pl.xml -->
+    <eat-comment/>
+    <string name="tw__share_subject_format">Tweet od użytkownika %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Udostępnij tweet</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/res/values-pl/wallet_strings.xml -->
     <eat-comment/>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Kup z Google"</string>

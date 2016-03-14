@@ -1,345 +1,377 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.cs160.joleary.represent.CongressionalActivity">
-
-    <Button
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:text="'?'"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="false"
-        android:layout_marginStart="304dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignEnd="@id/pic1"
-        android:minWidth="40dp" />
-
-    <Button
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:text="'?'"
-        android:id="@+id/button2"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_below="@+id/button"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="160dp" />
-
-    <Button
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:text="'?'"
-        android:id="@+id/button3"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_marginTop="140dp"
-        android:layout_below="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+    android:id="@+id/linlayout">
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/CMainScrollView" >
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView5"
+        android:nestedScrollingEnabled="true">
 
-        <GridLayout
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="false"
-            android:layout_alignParentStart="true"
-            android:id="@+id/lasttweet">
+            android:background="#05302c"
+            android:nestedScrollingEnabled="true">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:id="@+id/party1"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:src="@drawable/democrat_logo"
-                android:contentDescription="democrat logo" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="5dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="#ebebeb"
+                android:nestedScrollingEnabled="true">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/name1"
-                android:id="@+id/name1"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_columnSpan="1"
-                android:layout_gravity="center" />
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/pic1"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:src="@drawable/fred_160"
-                android:layout_rowSpan="6"
-                android:scaleType="fitCenter"
-                android:maxHeight="300dp"
-                android:maxWidth="200dp"
-                android:layout_columnWeight="2"
-                android:adjustViewBounds="false"
-                android:cropToPadding="true" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/party1"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:contentDescription="democrat logo"
+                        android:layout_marginLeft="3dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="doge4prez@wow.com"
-                android:id="@+id/email1"
-                android:layout_row="2"
-                android:layout_column="0"
-                android:textIsSelectable="false"
-                android:singleLine="true"
-                android:linksClickable="false"
-                android:autoLink="email"
-                android:layout_columnSpan="2"
-                android:layout_marginTop="10dp" />
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/pic1"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:layout_rowSpan="5"
+                        android:scaleType="centerCrop"
+                        android:maxHeight="200dp"
+                        android:maxWidth="200dp"
+                        android:layout_columnWeight="5"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:drawable/dialog_holo_light_frame" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="muchwebsite.com"
-                android:id="@+id/site1"
-                android:layout_row="3"
-                android:layout_column="0"
-                android:textIsSelectable="false"
-                android:singleLine="true"
-                android:linksClickable="false"
-                android:autoLink="web"
-                android:layout_columnSpan="2"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="5dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name1"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="5dp" />
 
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:id="@+id/twittericon"
-                android:layout_row="4"
-                android:layout_column="0"
-                android:src="@drawable/twitterlogo" />
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL"
+                        android:id="@+id/emailbutton1"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2"
+                        android:elegantTextHeight="false" />
 
-            <ScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
-                android:id="@+id/scrollView4"
-                android:layout_row="4"
-                android:layout_column="1" >
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="WEBSITE"
+                        android:id="@+id/sitebutton1"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2" />
 
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="75dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="this is some\n tweet \n that dfjsaifjdsak"
-                    android:id="@+id/tweet1"
-                    android:layout_row="4"
-                    android:layout_column="1"
-                    android:paddingLeft="5dp"
-                    android:layout_rowSpan="2"
-                    android:nestedScrollingEnabled="true"
-                    android:scrollIndicators="right" />
-            </ScrollView>
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="DETAILS"
+                        android:id="@+id/detailbutton1"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:id="@+id/party2"
-                android:layout_row="7"
-                android:layout_column="0"
-                android:src="@drawable/democrat_logo" />
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="72dp"
+                        android:layout_row="6"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:nestedScrollingEnabled="true">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/name2"
-                android:id="@+id/name2"
-                android:layout_row="7"
-                android:layout_column="1"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp" />
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="75dp"
+                            android:textAppearance="@style/tw__TweetText"
+                            android:id="@+id/tweet1"
+                            android:layout_row="6"
+                            android:layout_column="1"
+                            android:nestedScrollingEnabled="true"
+                            android:scrollIndicators="right"
+                            android:layout_columnSpan="2" />
+                    </ScrollView>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/pic2"
-                android:layout_row="7"
-                android:layout_column="2"
-                android:src="@drawable/fred_160"
-                android:scaleType="fitCenter"
-                android:maxHeight="300dp"
-                android:maxWidth="200dp"
-                android:layout_columnWeight="2"
-                android:adjustViewBounds="false"
-                android:layout_rowSpan="5"
-                android:layout_marginTop="5dp"
-                android:cropToPadding="true" />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:src="@drawable/twitterlogo"
+                        android:layout_marginLeft="3dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="doge4prez@wow.com"
-                android:id="@+id/email2"
-                android:layout_row="8"
-                android:layout_column="0"
-                android:textIsSelectable="false"
-                android:singleLine="true"
-                android:linksClickable="false"
-                android:autoLink="email"
-                android:layout_marginTop="10dp"
-                android:layout_columnSpan="2" />
+                </GridLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="muchwebsite.com"
-                android:id="@+id/site2"
-                android:layout_row="9"
-                android:layout_column="0"
-                android:textIsSelectable="false"
-                android:singleLine="true"
-                android:linksClickable="false"
-                android:autoLink="web"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_columnSpan="2" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="5dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="#ebebeb"
+                android:nestedScrollingEnabled="true">
 
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:id="@+id/imageView5"
-                android:layout_row="10"
-                android:layout_column="0"
-                android:src="@drawable/twitterlogo" />
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true">
 
-            <ScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
-                android:id="@+id/scrollView3"
-                android:layout_row="10"
-                android:layout_column="1" >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/party2"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:contentDescription="democrat logo"
+                        android:layout_marginLeft="3dp" />
 
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="75dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="this is some\nfghjkfvbjk \n ejfsai;fdjsa;fdsa"
-                    android:id="@+id/textView9"
-                    android:layout_row="10"
-                    android:layout_column="1"
-                    android:paddingLeft="5dp"
-                    android:nestedScrollingEnabled="true"
-                    android:scrollIndicators="right" />
-            </ScrollView>
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/pic2"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:layout_rowSpan="5"
+                        android:scaleType="centerCrop"
+                        android:maxHeight="200dp"
+                        android:maxWidth="200dp"
+                        android:layout_columnWeight="5"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:drawable/dialog_holo_light_frame" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:id="@+id/party3"
-                android:layout_row="12"
-                android:layout_column="0"
-                android:src="@drawable/democrat_logo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name2"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="5dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Doge"
-                android:id="@+id/name3"
-                android:layout_row="12"
-                android:layout_column="1"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp" />
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL"
+                        android:id="@+id/emailbutton2"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2"
+                        android:elegantTextHeight="false" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/pic3"
-                android:layout_row="12"
-                android:layout_column="2"
-                android:src="@drawable/fred_160"
-                android:scaleType="fitCenter"
-                android:maxHeight="300dp"
-                android:maxWidth="200dp"
-                android:layout_columnWeight="2"
-                android:adjustViewBounds="false"
-                android:layout_rowSpan="5"
-                android:layout_marginTop="10dp"
-                android:cropToPadding="true" />
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="WEBSITE"
+                        android:id="@+id/sitebutton2"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="doge4prez@wow.com"
-                android:id="@+id/email3"
-                android:layout_row="13"
-                android:layout_column="0"
-                android:textIsSelectable="false"
-                android:singleLine="true"
-                android:linksClickable="false"
-                android:autoLink="email"
-                android:layout_marginTop="10dp"
-                android:layout_columnSpan="2" />
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="DETAILS"
+                        android:id="@+id/detailbutton2"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="muchwebsite.com"
-                android:id="@+id/site3"
-                android:layout_row="14"
-                android:layout_column="0"
-                android:textIsSelectable="false"
-                android:singleLine="true"
-                android:linksClickable="false"
-                android:autoLink="web"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_columnSpan="2" />
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="72dp"
+                        android:layout_row="6"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:nestedScrollingEnabled="true">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/imageView8"
-                android:layout_row="15"
-                android:layout_column="0"
-                android:src="@drawable/twitterlogo" />
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="75dp"
+                            android:textAppearance="@style/tw__TweetText"
+                            android:id="@+id/tweet2"
+                            android:layout_row="6"
+                            android:layout_column="1"
+                            android:nestedScrollingEnabled="true"
+                            android:scrollIndicators="right"
+                            android:layout_columnSpan="2" />
+                    </ScrollView>
 
-            <ScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
-                android:id="@+id/scrollView2"
-                android:layout_row="15"
-                android:layout_column="1" >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:src="@drawable/twitterlogo"
+                        android:layout_marginLeft="3dp" />
 
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="75dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="this is some\nbfdsajkf;dsaet \n fdsafdsafdsast"
-                    android:id="@+id/textView10"
-                    android:layout_row="15"
-                    android:layout_column="1"
-                    android:paddingLeft="5dp"
-                    android:nestedScrollingEnabled="true"
-                    android:scrollIndicators="right" />
-            </ScrollView>
+                </GridLayout>
+            </android.support.v7.widget.CardView>
 
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="5dp"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="#ebebeb"
+                android:nestedScrollingEnabled="true">
 
-        </GridLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/party3"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:contentDescription="democrat logo"
+                        android:layout_marginLeft="3dp" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/pic3"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:layout_rowSpan="5"
+                        android:scaleType="centerCrop"
+                        android:maxHeight="200dp"
+                        android:maxWidth="200dp"
+                        android:layout_columnWeight="5"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:src="@drawable/trump" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name3"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="5dp" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL"
+                        android:id="@+id/emailbutton3"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2"
+                        android:elegantTextHeight="false" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="WEBSITE"
+                        android:id="@+id/sitebutton3"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="DETAILS"
+                        android:id="@+id/detailbutton3"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2" />
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="72dp"
+                        android:layout_row="6"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:nestedScrollingEnabled="true">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="75dp"
+                            android:textAppearance="@style/tw__TweetText"
+                            android:text="blah blah blahfdslafdksafjdaf;ldj fdjsaklf;j dsafds ad sa"
+                            android:id="@+id/tweet3"
+                            android:layout_row="6"
+                            android:layout_column="1"
+                            android:nestedScrollingEnabled="true"
+                            android:scrollIndicators="right"
+                            android:layout_columnSpan="2" />
+                    </ScrollView>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:src="@drawable/twitterlogo"
+                        android:layout_marginLeft="3dp" />
+
+                </GridLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
     </ScrollView>
+
+
+
 </RelativeLayout>
+

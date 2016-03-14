@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-hu/values-hu.xml -->
+    <eat-comment/>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 ó</item>
+        <item quantity="other">%d ó</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 p</item>
+        <item quantity="other">%d p</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 mp</item>
+        <item quantity="other">%d mp</item>
+    </plurals>
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-hu/values-hu.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ugrás a főoldalra"</string>
@@ -54,6 +68,45 @@
     <string msgid="311697239335516384" name="common_open_on_phone">"Megnyitás a telefonon"</string>
     <string msgid="3156914698180786012" name="common_signin_button_text">"Bejelentkezés"</string>
     <string msgid="1483290677806110088" name="common_signin_button_text_long">"Bejelentkezés Google-fiókkal"</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-hu/values-hu.xml -->
+    <eat-comment/>
+    <string name="dgts__call_me">Hívj fel</string>
+    <string name="dgts__calling">Hívás folyamatban…</string>
+    <string name="dgts__confirmation_code">Megerősítő kód</string>
+    <string name="dgts__confirmation_edit_hint">Add meg az általunk küldött hatjegyű kódot</string>
+    <string name="dgts__confirmation_error">A telefonszámod megerősítése sikertelen</string>
+    <string name="dgts__confirmation_error_alternative">Sajnáljuk, probléma merült fel az ellenőrzőkód elküldése során.</string>
+    <string name="dgts__confirmation_expired">Ez a kód lejárt. Kérjük, küldd újra a megerősítő kódot.</string>
+    <string name="dgts__continue">Tovább</string>
+    <string name="dgts__digits_logo_desc">digits logó ikonja</string>
+    <string name="dgts__digits_logo_name_desc">digits logó neve</string>
+    <string name="dgts__dismiss">Bezárás</string>
+    <string name="dgts__done">Kész</string>
+    <string name="dgts__email_request_edit_hint">E-mail cím</string>
+    <string name="dgts__email_request_title">Add meg az e-mail címedet</string>
+    <string name="dgts__find_your_friends">Találd meg barátaidat</string>
+    <string name="dgts__image_header_description">Fejléckép bejelentkezéshez</string>
+    <string name="dgts__invalid_email">Érvénytelen e-mail. Próbáld meg újra</string>
+    <string name="dgts__login_digits_text">A telefonszámom használata</string>
+    <string name="dgts__network_error">Kérjük, ellenőrizd a hálózatod és próbáld meg újra.</string>
+    <string name="dgts__not_now">Most nem</string>
+    <string name="dgts__okay">OK</string>
+    <string name="dgts__phone_number_edit_hint">A számod</string>
+    <string name="dgts__phone_number_text">Add meg a telefonszámod</string>
+    <string name="dgts__pin_code_verification_title">Add meg a kétlépcsős hitelesítés kódját</string>
+    <string name="dgts__resend_confirmation_button_code">Kód újraküldése</string>
+    <string name="dgts__resend_confirmation_text">Megerősítő kód újraküldése</string>
+    <string name="dgts__sending">Küldés folyamatban…</string>
+    <string name="dgts__success_desc">Sikerikon</string>
+    <string name="dgts__try_again">Próbáld meg újra</string>
+    <string name="dgts__try_again_confirmation">Kérjük, ellenőrizd a kódod és próbáld meg újra.</string>
+    <string name="dgts__try_again_email">Kérjük, ellenőrizd az e-mailjeidet és próbáld meg újra</string>
+    <string name="dgts__try_again_phone_number">Kérjük, ellenőrizd a számod és próbáld meg újra.</string>
+    <string name="dgts__try_another_phone">Próbálkozz másik telefonszámmal!</string>
+    <string name="dgts__unsupported_operator_error">Nem tudunk SMS-t küldeni erre a telefonszámra.</string>
+    <string name="dgts__upload_contacts">A Digits by Twitter segítségével megkeressük az alkalmazást használó ismerőseidet. Az OK gombra koppintva feltöltjük a címjegyzéked a Digits by Twitter szolgáltatásba, és ezáltal lehetővé tesszük, hogy megtaláld a(z) %1$s  alkalmazás általad ismert felhasználóit, vagy a(z) %1$s alkalmazás többi felhasználójának, hogy megtaláljanak téged.</string>
+    <string name="dgts__verification_code">Ellenőrzőkód</string>
+    <string name="dgts_pin_code_terms">Korábban kétlépcsős ellenőrzőkódot állítottál be a digits.com oldalon</string>
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-hu/values-hu.xml -->
     <eat-comment/>
     <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Tartalomátküldés"</string>
@@ -74,6 +127,36 @@
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-hu/values-hu.xml -->
     <eat-comment/>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-hu/values-hu.xml -->
+    <eat-comment/>
+    <string name="tw__allow_btn_txt">Engedélyezés</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-hu/values-hu.xml -->
+    <eat-comment/>
+    <string name="tw__like_tweet">Tweet kedvelése</string>
+    <string name="tw__liked_tweet">Tweet kedvelésének visszavonása</string>
+    <string name="tw__loading_tweet">Tweet betöltése</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-hu/values-hu.xml -->
+    <eat-comment/>
+    <string name="tw__login_btn_txt">Bejelentkezés Twitter-fiókkal</string>
+    <string name="tw__not_now_btn_txt">Most nem</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-hu/values-hu.xml -->
+    <eat-comment/>
+    <string name="tw__pause">szünet</string>
+    <string name="tw__play">lejátszás</string>
+    <string name="tw__relative_date_format_long">y. MM. dd.</string>
+    <string name="tw__relative_date_format_short">MMM d.</string>
+    <string name="tw__replay">lejátszás ismét</string>
+    <string name="tw__retweeted_by_format">%1$s retweetelte</string>
+    <string name="tw__share_content_format">Nézd meg \@%1$s\ felhasználó tweetjét: https://twitter.com/%1$s/status/%2$s</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-hu/values-hu.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">Engedélyezd a(z) %1$s számára Twitter-fiókodhoz kapcsolódó e-mail cím elérését \@%2$s, hogy a(z) %1$s adatvédelmi irányelveinek megfelelően használhassa azt. Például, hogy %1$s frissítéseket és más egyéb információkat küldhessen erre az e-mail címre.</string>
+    <string name="tw__share_email_title">Oszd meg az e-mail címedet</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-hu/values-hu.xml -->
+    <eat-comment/>
+    <string name="tw__share_subject_format">Tweet %1$s (\@%2$s) felhasználótól</string>
+    <string name="tw__share_tweet">Tweet megosztása</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/res/values-hu/wallet_strings.xml -->
     <eat-comment/>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Vásárlás a Google-lal"</string>

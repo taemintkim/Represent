@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -27,29 +28,53 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.Legend.LegendPosition;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
+import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.highlight.Highlight;
+import com.github.mikephil.charting.formatter.PercentFormatter;
+
+
+import java.security.KeyStore;
+import java.util.ArrayList;
+
+
 public class ProfileActivity extends FragmentActivity {
+
     // When requested, this adapter returns a DemoObjectFragment,
     // representing an object in the collection.
     ProfilePagerAdapter mProfilePagerAdapter;
     ViewPager mViewPager;
-    String[] namearg = {"default 1", "default 2", "default 3"};
-    String[] partyarg = {"dem", "rep", "ind"};
-    String dataarg = "Vermin Supreme (77%)\nObama (13%)\nRomney (5%)\nZIP Code: ";
+    String[] namearg = {"", "", ""};
+    String[] partyarg = {"D", "R", "I"};
+    String[] dataarg;
     private SensorManager mSensorManager;
     private ShakeEventListener mSensorListener;
     String location = "";
+    Context context;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        context = getApplicationContext();
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
+        Log.d("MESSAGERECEIVED###", "in Profile Activity");
         if (extras != null) {
             namearg = getNameArray(extras);
             partyarg = getPartyArray(extras);
-            location = extras.getString("ZIP");
-            dataarg = dataarg + location;
+            location = extras.getString("countyState");
+            String rom = extras.getString("ROMNEY");
+            String oba = extras.getString("OBAMA");
+            String[] dataarg0 = { oba, rom, location};
+            dataarg = dataarg0;
         }
 
         // ViewPager and its adapters use support library
@@ -62,6 +87,8 @@ public class ProfileActivity extends FragmentActivity {
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mSensorListener = new ShakeEventListener();
 
+        // When a new location is picked from mobile, update this activity with
+        // the new info.
         BroadcastReceiver receiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
@@ -69,8 +96,11 @@ public class ProfileActivity extends FragmentActivity {
                 if (extras != null) {
                     String[] namearg = getNameArray(extras);
                     String[] partyarg = getPartyArray(extras);
-                    location = extras.getString("ZIP");
-                    dataarg = dataarg + location;
+                    location = extras.getString("countyState");
+                    String rom = extras.getString("ROMNEY");
+                    String oba = extras.getString("OBAMA");
+                    String[] dataarg0 = { oba, rom, location};
+                    dataarg = dataarg0;
                     mProfilePagerAdapter = new ProfilePagerAdapter(
                             getSupportFragmentManager(), namearg, partyarg, dataarg);
                     mViewPager = (ViewPager) findViewById(R.id.pager);
@@ -121,10 +151,10 @@ public class ProfileActivity extends FragmentActivity {
     public class ProfilePagerAdapter extends FragmentPagerAdapter {
         private String[] names;
         private String[] parties;
-        private String data;
+        private String[] data;
 
 
-        public ProfilePagerAdapter(FragmentManager fm, String[] _names, String[] _party, String _data) {
+        public ProfilePagerAdapter(FragmentManager fm, String[] _names, String[] _party, String[] _data) {
             super(fm);
             names = _names;
             parties = _party;
@@ -142,7 +172,7 @@ public class ProfileActivity extends FragmentActivity {
                 args.putString(DemoObjectFragment.PARTY, parties[i]);
             } else {
                 fragment = new VoteFragment();
-                args.putString(VoteFragment.DATA, data);
+                args.putStringArray(VoteFragment.DATA, data);
             }
 
             fragment.setArguments(args);
@@ -188,7 +218,7 @@ public class ProfileActivity extends FragmentActivity {
 
         @Override
         public void onClick(View v) {
-            Log.d("PROFILECLICKS", "profile clicked");
+            Log.d("PROFILECLICKS", "profile clicked: " + prof_name);
             Intent sendIntent = new Intent(getActivity(), WatchToPhoneService.class);
             sendIntent.putExtra("SHOW_PROFILE", prof_name);
             startService(sendIntent);
@@ -196,32 +226,101 @@ public class ProfileActivity extends FragmentActivity {
 
         void changeBackground(String party, RelativeLayout ll, View view) {
             switch (party) {
-                case "dem": ll.setBackgroundResource(R.drawable.dem_logo);
+                case "D": ll.setBackgroundResource(R.drawable.dem_logo);
                     break;
-                case "rep": ll.setBackgroundResource(R.drawable.rep_logo);
+                case "R": ll.setBackgroundResource(R.drawable.rep_logo);
                     break;
-                case "ind": ll.setBackgroundResource(R.drawable.dogeprofilepic);
+                case "I": ll.setBackgroundResource(R.drawable.indep_logo);
                     break;
-                default: ll.setBackgroundResource(R.drawable.dogeprofilepic);
+                default: ll.setBackgroundResource(R.drawable.flag);
                     break;
             }
         }
     }
 
     public class VoteFragment extends Fragment {
+        private RelativeLayout mainLayout;
         public static final String DATA = "Data";
+        private PieChart mChart;
+        private float[] yData = new float[2];
+        private String[] xData = { "Obama", "Romney" };
         @Override
         public View onCreateView(LayoutInflater inflater,
                                  ViewGroup container, Bundle savedInstanceState) {
+
             View rootView = inflater.inflate(
                     R.layout.votefragment, container, false);
             Bundle args = getArguments();
+            String[] data = args.getStringArray(DATA);
+            yData[0] = Float.parseFloat(data[0]);
+            yData[1] = Float.parseFloat(data[1]);
 
-            String data = args.getString(DATA);
+//            ((TextView) rootView.findViewById(R.id.vote_data)).setText(
+//                    args.getString(DATA));
+//            rootView.setBackgroundResource(R.drawable.flag);
 
-            ((TextView) rootView.findViewById(R.id.vote_data)).setText(
-                    args.getString(DATA));
+            mChart = (PieChart) rootView.findViewById(R.id.chart1);;
+            TextView title = (TextView) rootView.findViewById(R.id.votetitle);
+            title.setText("2012 Presidential Election Votes at\n" + location);
+            // add pie chart to main layout
+
+            // configure pie chart
+            mChart.setUsePercentValues(true);
+
+            // enable hole and configure
+            mChart.setDrawHoleEnabled(true);
+//            mChart.setHoleColor(true);
+            mChart.setHoleRadius(7);
+            mChart.setTransparentCircleRadius(10);
+
+            // enable rotation of the chart by touch
+            mChart.setRotationAngle(0);
+            mChart.setRotationEnabled(true);
+
+            // add data
+            addData();
+
             return rootView;
+        }
+
+        private void addData() {
+            ArrayList<Entry> yVals1 = new ArrayList<Entry>();
+
+            for (int i = 0; i < yData.length; i++)
+                yVals1.add(new Entry(yData[i], i));
+
+            ArrayList<String> xVals = new ArrayList<String>();
+
+            for (int i = 0; i < xData.length; i++)
+                xVals.add(xData[i]);
+
+            // create pie data set
+            PieDataSet dataSet = new PieDataSet(yVals1, "");
+            dataSet.setSliceSpace(3);
+            dataSet.setSelectionShift(5);
+
+            // add many colors
+            ArrayList<Integer> colors = new ArrayList<Integer>();
+
+            colors.add(getResources().getColor(android.R.color.holo_blue_light));
+            colors.add(getResources().getColor(android.R.color.holo_red_light));
+            dataSet.setColors(colors);
+
+            // instantiate pie data object now
+            PieData data = new PieData(xVals, dataSet);
+            data.setValueFormatter(new PercentFormatter());
+            data.setValueTextSize(11f);
+            data.setValueTextColor(Color.WHITE);
+
+            mChart.setData(data);
+            mChart.getLegend().setEnabled(false);
+            mChart.setDescription("");
+
+            // undo all highlights
+            mChart.highlightValues(null);
+
+            // update pie chart
+            mChart.invalidate();
         }
     }
 }

@@ -54,6 +54,38 @@
     </style>
     <style name="Base.Widget.AppCompat.ProgressBar.Horizontal" parent="android:Widget.Holo.ProgressBar.Horizontal">
     </style>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values-v11/values-v11.xml -->
+    <eat-comment/>
+    <style name="ComposerDark" parent="@android:style/Theme.Holo">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/tw__composer_white</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_white</item>
+    </style>
+    <style name="ComposerLight" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/tw__composer_black</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_blue</item>
+    </style>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-v11/values-v11.xml -->
+    <eat-comment/>
+    <style name="Digits_default" parent="@android:style/Theme.Holo.Light">
+        <item name="dgts__accentColor">@color/dgts__default_accent</item>
+    </style>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-v11/values-v11.xml -->
+    <eat-comment/>
+    <style name="MediaTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-v11/values-v11.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="Platform.V11.AppCompat"/>
     <style name="Platform.AppCompat.Light" parent="Platform.V11.AppCompat.Light"/>
     <style name="Platform.V11.AppCompat" parent="android:Theme.Holo">

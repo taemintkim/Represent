@@ -54,6 +54,11 @@
     <string msgid="311697239335516384" name="common_open_on_phone">"Otvori na telefonu"</string>
     <string msgid="3156914698180786012" name="common_signin_button_text">"Prijava"</string>
     <string msgid="1483290677806110088" name="common_signin_button_text_long">"Prijava putem Googlea"</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-hr/values-hr.xml -->
+    <eat-comment/>
+    <string name="dgts__confirmation_edit_hint">Unesite šesteroznamenkasti kod koji smo vam poslali</string>
+    <string name="dgts__resend_confirmation_button_code">Ponovno pošalji kod</string>
+    <string name="dgts__resend_confirmation_text">Ponovno pošalji potvrdni kod</string>
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-hr/values-hr.xml -->
     <eat-comment/>
     <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Emitiranje"</string>
@@ -74,6 +79,14 @@
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-hr/values-hr.xml -->
     <eat-comment/>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-hr/values-hr.xml -->
+    <eat-comment/>
+    <string name="tw__pause">pauziraj</string>
+    <string name="tw__play">reproduciraj</string>
+    <string name="tw__replay">ponovno reproduciraj</string>
+    <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-hr/values-hr.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">Korisniku/ci %1$s dopustite pristup adresi e-pošte povezanoj s vašim računom za Twitter \@%2$s da bi je %1$s mogao/la koristiti u skladu s pravilima o zaštiti privatnosti. %1$s bi vam na tu adresu, primjerice, mogao/la slati novosti i ostale obavijesti.</string>
     <!-- From: file:/Users/TK/Downloads/Represent/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/res/values-hr/wallet_strings.xml -->
     <eat-comment/>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Kupi putem Googlea"</string>

@@ -7,7 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.cs160.joleary.represent.StartActivity">
+    tools:context="com.cs160.joleary.represent.StartActivity"
+    android:background="#05302c"
+    android:backgroundTintMode="src_over">
 
     <EditText
         android:layout_width="wrap_content"
@@ -21,7 +23,9 @@
         android:hint="ZIP Code"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/locationbutton"
-        android:layout_toStartOf="@+id/zipbutton" />
+        android:layout_toStartOf="@+id/zipbutton"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -29,7 +33,8 @@
         android:text="@string/find"
         android:id="@+id/zipbutton"
         android:layout_alignBottom="@+id/zipText"
-        android:layout_alignEnd="@+id/locationbutton" />
+        android:layout_alignEnd="@+id/locationbutton"
+        style="@style/Base.Widget.AppCompat.Button.Colored" />
         <!--android:layout_alignStart="@+id/zipText"-->
     />
 
@@ -41,5 +46,6 @@
         android:layout_below="@+id/zipText"
         android:layout_alignParentStart="true"
         android:layout_marginTop="54dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        style="@style/Base.Widget.AppCompat.Button.Colored" />
 </RelativeLayout>

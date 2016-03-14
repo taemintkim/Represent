@@ -50,8 +50,9 @@ public class WatchListenerService extends WearableListenerService {
         intent.putExtra("NAME3", tokens[4]);
         intent.putExtra("PARTY3", tokens[5]);
         intent.putExtra("ZIP", tokens[6]);
-        Log.d("MESSAGE#####", tokens[0] + tokens[1] + tokens[6]);
-
+        intent.putExtra("countyState", tokens[7]);
+        intent.putExtra("ROMNEY", tokens[8]);
+        intent.putExtra("OBAMA", tokens[9]);
     }
 
 }

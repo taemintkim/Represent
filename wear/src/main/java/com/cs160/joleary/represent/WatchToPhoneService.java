@@ -85,7 +85,7 @@ public class WatchToPhoneService extends Service {
     private void sendMessage( final String path, final String text ) {
         //one way to send message: start a new thread and call .await()
         //see watchtophoneservice for another way to send a message
-        Log.d("T*&^%$#@#$%^&*", "sending message from watch");
+        Log.d("T*&^%$#@#$%^&*", "sending message from watch: " + text);
 
         new Thread( new Runnable() {
             @Override

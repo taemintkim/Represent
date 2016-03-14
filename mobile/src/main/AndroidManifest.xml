@@ -6,13 +6,13 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".MyApp"
         android:theme="@style/AppTheme">
         <activity
             android:name=".StartActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,17 +28,28 @@
         </service>
         <activity
             android:name=".CongressionalActivity"
-            android:label="@string/title_activity_congressional"
+            android:label="Your Representatives"
             android:parentActivityName=".StartActivity" />
         <activity
             android:name=".DetailedActivity"
-            android:label="@string/title_activity_detailed"></activity>
+            android:label="Details"
+            android:parentActivityName=".CongressionalActivity"
+            ></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c0114d7951b768a8e3e6051ca6198e6a4d7ad3ae" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCE2DpSs__BzRAavZu7hEDpLB-ozaVOiwU"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
     <uses-permission
         android:name="android.permission.INTERNET"/>
     <uses-permission
         android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
 </manifest>
