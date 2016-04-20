@@ -90,7 +90,7 @@
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <!-- From: file:/Users/TK/Downloads/Represent/wear/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml -->
     <eat-comment/>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">ca7209a1-66d6-4184-995a-229765ba7e27</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">180c08cc-37a3-42f1-8d76-cadb0e2e09bd</string>
     <!-- From: file:/Users/TK/Downloads/Represent/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>

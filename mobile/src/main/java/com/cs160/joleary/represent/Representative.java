@@ -1,8 +1,6 @@
 package com.cs160.joleary.represent;
 
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
-import android.location.Location;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -11,6 +9,7 @@ import org.json.JSONObject;
 
 /**
  * Created by TK on 3/3/16.
+ * A class with relevant data for a Representative.
  */
 public class Representative {
     public String name;
@@ -31,7 +30,6 @@ public class Representative {
     public String twitterImageURL;
     public Bitmap profileImg;
     public String tweet;
-    public Location mLastLocation;
 
     public Representative() {}
 
@@ -51,7 +49,7 @@ public class Representative {
         letsparty();
     }
 
-    void letsparty() {
+    private void letsparty() {
         switch (partyName) {
             case "D": partyImg = R.drawable.democrat_logo;
                 partyID = 0;
@@ -60,7 +58,6 @@ public class Representative {
             case "R": partyImg = R.drawable.rep_logo;
                 partyID = 1;
                 longParty = "Republican";
-
                 break;
             case "I": partyImg = R.drawable.indep_logo;
                 partyID = 2;

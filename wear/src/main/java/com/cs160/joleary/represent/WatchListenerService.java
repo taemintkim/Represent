@@ -9,9 +9,6 @@ import com.google.android.gms.wearable.WearableListenerService;
 
 import java.nio.charset.StandardCharsets;
 
-/**
- * Created by joleary and noon on 2/19/16 at very late in the night. (early in the morning?)
- */
 public class WatchListenerService extends WearableListenerService {
     // In PhoneToWatchService, we passed in a path, either "/FRED" or "/LEXY"
     // These paths serve to differentiate different phone-to-watch messages
@@ -27,7 +24,7 @@ public class WatchListenerService extends WearableListenerService {
 
         if( messageEvent.getPath().equalsIgnoreCase( REP ) ) {
             String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
-            Log.d("MESSAGERECEIVED###", "in WatchListenerService, got: " + value);
+            Log.d("MESSAGE_RECEIVED", "in WatchListenerService, got: " + value);
             Intent intent = new Intent(this, ProfileActivity.class );
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //you need to add this flag since you're starting a new activity from a service

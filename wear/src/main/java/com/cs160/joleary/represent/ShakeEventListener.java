@@ -8,6 +8,7 @@ import android.hardware.SensorManager;
 
 /**
  * Listener that detects shake gesture.
+ * Courtesy of StackOverflow. <3
  */
 public class ShakeEventListener implements SensorEventListener {
 

@@ -16,9 +16,6 @@ import com.google.android.gms.wearable.Wearable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by joleary and noon on 2/19/16 at very late in the night. (early in the morning?)
- */
 public class WatchToPhoneService extends Service {
 
     private GoogleApiClient mApiClient;
@@ -67,9 +64,7 @@ public class WatchToPhoneService extends Service {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    //first, connect to the apiclient
                     mApiClient.connect();
-                    //now that you're connected, send a massage with the cat name
                     sendMessage("/Shake", "shakeit");
                 }
             }).start();
@@ -85,7 +80,7 @@ public class WatchToPhoneService extends Service {
     private void sendMessage( final String path, final String text ) {
         //one way to send message: start a new thread and call .await()
         //see watchtophoneservice for another way to send a message
-        Log.d("T*&^%$#@#$%^&*", "sending message from watch: " + text);
+        Log.d("in WatchToPhone", "sending message from watch: " + text);
 
         new Thread( new Runnable() {
             @Override

@@ -7,11 +7,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -44,18 +39,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
 import java.util.Random;
 
 import io.fabric.sdk.android.Fabric;
 
+/**
+ * Activity that shows brief information for three representatives.
+ */
 public class CongressionalActivity extends Activity {
     private static final String TWITTER_KEY = "qFL4OPP5BhqrHDUaSpJV5GUOy";
     private static final String TWITTER_SECRET = "aCKOooqGBeuAxj7RJcxsb51NgRZO6gVxTMsA1BfTZGifd7dAZ7";
@@ -115,10 +109,10 @@ public class CongressionalActivity extends Activity {
         }
 
         Intent intent = getIntent();
-        int intentzip = intent.getIntExtra(StartActivity.ZIP_CODE, -99);
-        Log.d("CongressionalACtivity", "new activity with zip: " + intentzip);
+        int intentzip = intent.getIntExtra(StartActivity.ZIP_CODE, -99); //user input ZIP should never be negative.
+        Log.d("CongressionalActivity", "new activity with zip: " + intentzip);
         if (intentzip == -9999) { //this activity is triggered by a shake.
-            random();
+            random(); //get a random location
             fetchRepData(myapp.zip);
         } else if (intentzip == -99) { //this activity should not find new data
             updateViews(); //use stored data.
@@ -259,7 +253,7 @@ public class CongressionalActivity extends Activity {
         return alertDialogBuilder;
     }
 
-    void findViews() {
+    private void findViews() {
         name1 = (TextView) findViewById(R.id.name1);
         name2 = (TextView) findViewById(R.id.name2);
         name3 = (TextView) findViewById(R.id.name3);
@@ -287,11 +281,10 @@ public class CongressionalActivity extends Activity {
         tweet1 = (TextView) findViewById(R.id.tweet1);
         tweet2 = (TextView) findViewById(R.id.tweet2);
         tweet3 = (TextView) findViewById(R.id.tweet3);
-
     }
 
     //searches for representatives. sends info to watch.
-    void sendToWatch() {
+    private void sendToWatch() {
         Intent sendIntent = new Intent(getBaseContext(), PhoneToWatchService.class);
         sendIntent.putExtra("IS_NEW_REPDATA", true);
 
@@ -311,27 +304,29 @@ public class CongressionalActivity extends Activity {
         startService(sendIntent);
     }
 
-    void updateViews() {
+    private void updateViews() {
         name1.setText(myapp.reps.get(0).name);
         pic1.setImageBitmap(myapp.getRep(0).profileImg);
+//        setImagesWPicasso(myapp.reps.get(0), pic1);
         party1.setImageResource(myapp.reps.get(0).partyImg);
         tweet1.setText(myapp.reps.get(0).tweet);
 
         name2.setText(myapp.reps.get(1).name);
         pic2.setImageBitmap(myapp.getRep(1).profileImg);
+//        setImagesWPicasso(myapp.reps.get(1), pic2);
         party2.setImageResource(myapp.reps.get(1).partyImg);
         tweet2.setText(myapp.reps.get(1).tweet);
 
         name3.setText(myapp.reps.get(2).name);
         pic3.setImageBitmap(myapp.getRep(2).profileImg);
-        pic3.setImageBitmap(myapp.getRep(2).profileImg);
-        pic3.setImageBitmap(myapp.getRep(2).profileImg);
+//        setImagesWPicasso(myapp.reps.get(2), pic3);
         party3.setImageResource(myapp.reps.get(2).partyImg);
         tweet3.setText(myapp.reps.get(2).tweet);
     }
 
-    void random() {
-        int[] ys = {58501, 83214, 22664};
+    private void random() { //THIS DOES NOT WORK. THE CODE FOR TRUE RANDOM LOCATION
+        //BREAKS DUE TO MISALIGNMENT BETWEEN ZIPCODE AND LONGITUDE/LATITUDE
+        int[] ys = {58501, 83214, 22664}; //example zips.
         Random rand = new Random();
         myapp.zip = ys[rand.nextInt(3)];
 
@@ -394,7 +389,6 @@ public class CongressionalActivity extends Activity {
             }
         }
 
-        //         onPostExecute displays the results of the AsyncTask.
         @Override
         protected void onPostExecute(String result) {
             updateViews();
@@ -413,14 +407,14 @@ public class CongressionalActivity extends Activity {
                 for (int i = 0; i < 3; i++) {
                     getTwitterPic(i);
                 }
-                Toast twitterfail = Toast.makeText(getApplicationContext(), "done getting twitter pics", Toast.LENGTH_SHORT);
+                Toast.makeText(getApplicationContext(), "done getting twitter pics", Toast.LENGTH_SHORT);
             }
 
             @Override
             public void failure(TwitterException exception) {
                 Log.d("Twitter Auth", "loginGuest.callback.failure called");
                 // unable to get an AppSession with guest auth
-                Toast twitterfail = Toast.makeText(getApplicationContext(), "Twitter Authentication Failed!", Toast.LENGTH_SHORT);
+                Toast.makeText(getApplicationContext(), "Twitter Authentication Failed!", Toast.LENGTH_SHORT);
             }
         });
         return twitterApiClient;
@@ -432,9 +426,6 @@ public class CongressionalActivity extends Activity {
             @Override
             public void success(Result<List<Tweet>> listResult) {
 
-//                System.out.println("listResult"+listResult.data.size());
-//                System.out.println("listResult"+listResult.data.get(0).user);
-//                System.out.println("listResult" + listResult.data.get(0).text);
                 myapp.getRep(repIndex).tweet = listResult.data.get(0).text;
                 String origurl = listResult.data.get(0).user.profileImageUrl;
                 myapp.getRep(repIndex).twitterImageURL = origurl.replaceAll("_normal", "");
@@ -443,20 +434,21 @@ public class CongressionalActivity extends Activity {
 
             @Override
             public void failure(TwitterException e) {
-
+                Log.d("Fetch Twitter Pic", "failed to fetch picture");
             }
         });
     }
 
-    void downloadImgs() {
+
+    private void downloadImgs() {
         for (int i = 0; i < 3; i++) {
             Bitmap mIcon;
             Representative myrep = myapp.getRep(i);
             try {
                 URL url = new URL(myrep.twitterImageURL);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setReadTimeout(100000 /* milliseconds */);
-                conn.setConnectTimeout(150000 /* milliseconds */);
+                conn.setReadTimeout(10000 /* milliseconds */);
+                conn.setConnectTimeout(15000 /* milliseconds */);
                 conn.setRequestMethod("GET");
                 conn.setDoInput(true);
                 // Starts the query
@@ -467,7 +459,7 @@ public class CongressionalActivity extends Activity {
                 mIcon = BitmapFactory.decodeStream(in);
                 myrep.profileImg = mIcon;
             } catch (Exception e) {
-                Log.e("Twitter Img Error", "couldn't get img from url");
+                Log.e("Twitter Img Error", "Couldn't get img from url");
             }
         }
     }

@@ -6,7 +6,9 @@ import java.util.ArrayList;
 
 /**
  * Created by TK on 3/11/16.
+ * For storing synchronized variables across activities.
  */
+
 public class MyApp extends Application {
     public int zip;
     public ArrayList<Representative> reps = new ArrayList<>();
